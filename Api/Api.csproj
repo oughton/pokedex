@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>1ab0733c-9210-407a-a6ee-f6fd64dc6440</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <AssemblyName>Pokedex.Api</AssemblyName>
+    <RootNamespace>Pokedex.Api</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.13" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FunTranslationsClient\FunTranslationsClient.csproj" />
+    <ProjectReference Include="..\PokeApiClient\PokeApiClient.csproj" />
+    <ProjectReference Include="..\Pokedex\Pokedex.csproj" />
+  </ItemGroup>
+
+
+</Project>
